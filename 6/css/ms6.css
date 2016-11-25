@@ -1,0 +1,133 @@
+/*导航栏*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+label{
+	font-family: 仿宋;
+	font-size: 7px;
+	color: #adadad;
+	margin-bottom: 20px;
+}
+h4{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.navbar-default{
+	background-color: rgba(109, 186, 227, 0.4);
+	border-color: transparent;
+}
+.navbar-default a{
+	color: #ffffff !important;
+}
+.navbar-default .dropdown .dropdown-menu a{
+	color: #000 !important;
+}
+.navbar-default > .active > a{
+	color: #000;
+}
+.navbar-default .navbar-nav > .active > a{
+	color: #000 !important;
+}
+.carousel{
+	height: 793px;
+}
+.carousel .item {
+    height: 100%;
+}
+.carousel .item img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-inner{
+	height: 100%;
+}
+/* /导航栏 */
+/*房间信息*/
+.container{
+	position: relative;
+	top: 90px;
+}
+.container .center{
+	width: 80%;
+	margin: 0 auto;
+	background-color: #f0f0f0;
+	padding: 10px 30px;
+}
+.container .center p{
+	text-indent: 2em;
+	font-family: 宋体 !important;
+	line-height: 2em !important;
+}
+.container .center img{
+	margin-bottom: 10px;
+	width: 100%;
+}
+/* /房间信息 */
+/*信息滚动*/
+.info{
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: 30px;
+}
+.con1{
+	list-style: none;
+	margin-bottom: 0px;
+}
+.moocBox{
+	height: 100px;
+	border: none;
+	overflow: hidden;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.moocBox .con1 li{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+.moocBox .con1 a{
+	color: #000;
+}
+.info p{
+	margin-left: -10px;
+	font-size: 17px;
+	font-weight: 700;
+}
+/* /信息滚动 */
+/*民宿推荐*/
+.img_right{
+	margin-left: -25px;
+	margin-right: -45px;
+	margin-bottom: 37px;
+}
+.img_right_img{
+	width: 100%;
+}
+.img_right_img:hover{
+	transform: scale(1.1, 1.1);
+	transition: .3s transform;
+}
+.div_img{
+	width: 100%;
+	margin-bottom: 7px;
+	overflow: hidden;
+}
+.img_right a{
+	color: #000;
+}
+.img_right a:hover{
+	text-decoration: none;
+	color: red;
+}
+/* /民宿推荐 */
+/*回到顶部按钮*/
+.tops{
+	position: relative;
+	top: 17px;
+	right: 470px;
+	float: right;
+	font-size: 37px;
+	color: #aeb564;
+}
+/* /回到顶部按钮 */

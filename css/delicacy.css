@@ -1,0 +1,202 @@
+body{
+	width: 100%;
+	height: 100%;
+}
+h1{
+	font-family: 楷体;
+}
+
+/*导航栏*/
+.navbar-default{
+	background-color: rgba(109, 186, 227, 0.4);
+	border-color: transparent;
+}
+.navbar-default a{
+	color: #ffffff !important;
+}
+.navbar-default .dropdown .dropdown-menu a{
+	color: #000 !important;
+}
+.navbar-default > .active > a{
+	color: #000;
+}
+.navbar-default .navbar-nav > .active > a{
+	color: #000 !important;
+}
+.carousel{
+	height: 793px;
+}
+.carousel .item {
+    height: 100%;
+}
+.carousel .item img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-inner{
+	height: 100%;
+}
+/* /导航栏 */
+/*美食区*/
+.centainers *{
+	z-index: 2;
+}
+.centainers{
+	width: 100%;
+	display: block;
+	position: absolute;
+	margin-top: 80px;
+	padding: 50px;
+	text-align: center;
+	z-index: 2;
+}
+.centainers h3{
+	margin-top: -30px;
+	margin-bottom: 40px;
+	font-size: 27px;
+	font-family: 楷体;
+}
+.centainers .row{
+	margin-bottom: 30px;
+}
+.centainers .portfolio-item{
+	margin-right: 25px;
+}
+.centainers .row .portfolio-item a{
+	list-style: none;
+	text-align: center;
+}
+.centainers .row .portfolio-item a:hover{
+	color: red;
+	text-decoration: none;
+}
+.centainers .row .portfolio-item a:hover > img{
+	transform: scale(1.1, 1.1);
+	transition: .3s transform;
+}
+.centainers .row .portfolio-item img{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 20px;
+}
+.centainers .row p{
+	color: #000;
+}
+.centainers .row p:hover{
+	color: red;
+}
+/* /美食区 */
+/*portfolio*/
+.portfolio-modal .modal-content{
+	padding: 10px 0 35px;
+	min-height: 100%;
+	border: 0;
+	border-radius: 0;
+	text-align: center;
+	background-clip: border-box;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.modal-content{
+	background-color: rgba(250,250,250,1);
+}
+.portfolio-modal .close-modal{
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	width: 75px;
+	height: 75px;
+	background-color: transparent;
+	cursor: pointer;
+}
+.portfolio-modal .close-modal .lr{
+	z-index: 1077;
+	width: 1px;
+	height: 75px;
+	margin-left: 35px;
+	background-color: #000;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+}
+.portfolio-modal .close-modal .lr .rl{
+	z-index: 1078;
+	width: 1px;
+	height: 75px;
+	background-color: #000;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+}
+.img-responsive{
+	margin: 50px auto 30px;
+	width: 50%; 
+}
+.portfolio-modal .modal-content h1{
+	color: #000;
+}
+.portfolio-modal .modal-content hr{
+	border-top: 2px solid #bababa;
+}
+.portfolio-modal .modal-content p{
+	color: #000;
+}
+.portfolio-modal .modal-content .container button{
+	margin-top: 20px;
+}
+.container{
+	margin-bottom: 40px;
+}
+/* /portfolio*/
+.slideanim{
+	visibility: hidden;
+}
+.slide{
+	animation-name: slide;
+	-webkit-animation-name: slide; 
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	visibility: visible;
+}
+.text_p{
+	text-align: left;
+}
+.bz{
+	text-align: left;
+	display: block;
+	color: red;
+	margin-bottom: 30px;
+}
+.bz i{
+	color: #000;
+	font-style: normal;
+	padding-left: 7px;
+}
+.d_border{
+	border-top: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
+}
+.p_border{
+	border-bottom: 1px solid #c9c9c9;
+	padding: 10px;
+}
+
+.text_color{
+	text-align: left;
+	display: block;
+	color: #45bd3a;
+	margin-bottom: -10px;
+}
+.text_color i{
+	color: #000;
+	font-style: normal;
+	padding-left: 7px;
+}
+
+.btn-default{
+	border-color: rgba(133, 201, 212, 0.7) !important;
+}
+.btn-default:hover{
+	border-color: rgba(133, 201, 212, 1) !important;
+	box-shadow: 0 0 3px #85c9d4;
+}
