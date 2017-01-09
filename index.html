@@ -1,538 +1,1083 @@
 <!DOCTYPE html>
-<html>
+
+<html ng-app="myApp">
+
 <head>
+
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
 <link rel="stylesheet" type="text/css" href="css/style.css">
+
 <title>大鹏旅游攻略</title>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.js"></script>
+
 </head>
+
 <body id="Mypage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
 <!--导航栏-->
+
 <nav class="navbar navbar-default navbar-fixed-top">
+
   <div class="container-fluid">
+
     <!-- Brand and toggle get grouped for better mobile display -->
+
     <div class="navbar-header">
+
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
         <span class="sr-only">Toggle navigation</span>
+
         <span class="icon-bar"></span>
+
         <span class="icon-bar"></span>
+
         <span class="icon-bar"></span>
+
       </button>
+
       <a class="navbar-brand active xg" href="#Mypage">首页</a>
+
     </div>
+
+
 
     <!-- Collect the nav links, forms, and other content for toggling -->
+
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
       <ul class="nav navbar-nav">
+
         <li><a class="xg" href="#gucheng">大鹏古城</a></li>
+
         <li><a class="xg" href="#dahai">海上风光</a></li>
+
         <li class="dropdown">
+
         	<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">特色食宿<span class="caret"></span></a>
+
         	<ul class="dropdown-menu">
+
 				<li><a href="delicacy.html#meishi" target="_blank">美食</a></li>
+
 				<li><a href="#minsu" class="xg">民宿</a></li>
+
         	</ul>
+
         </li>
+
       </ul>
-      <form class="navbar-form navbar-right">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="用户名">
-          <input type="password" class="form-control" placeholder="密码">
-        </div>
-        <button type="submit" class="btn btn-default">登录</button>
-      </form>
+		<div ng-controller="myCtrl" class="mydiv">
+	      <form class="navbar-form navbar-right"  ng-show="edit">
+
+	        <div class="form-group">
+
+	          <input type="text" class="form-control" ng-model="name" placeholder="用户名" required>
+
+	          <input type="password" class="form-control" ng-model="passw" placeholder="密码" required>
+
+	        </div>
+
+	        <button class="btn btn-default" ng-click="logo('in')">登录</button>
+
+	      </form>
+	      <div class="mydivs" ng-hide="edit">
+			<span ng-model="user" class="mytext">Hi, {{ name }}</span>
+	      	<span class="mytexts" ng-click="logo()">退出</span>
+	    	</div>
+		</div>
+		
     </div><!-- /.navbar-collapse -->
+
   </div><!-- /.container-fluid -->
+
 </nav>
+
 <!-- /导航栏 -->
 
+
+
 <!--图片轮播-->
+
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
   <!-- Indicators -->
+
   <ol class="carousel-indicators">
+
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+
     <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+
   </ol>
 
+
+
   <!-- Wrapper for slides -->
+
   <div class="carousel-inner" role="listbox">
+
     <div class="item active">
+
       <img src="image/1.jpg" alt="图片显示失败">
+
     </div>
+
     <div class="item">
+
       <img src="image/2.jpg" alt="图片显示失败">
+
     </div>
+
     <div class="item">
+
       <img src="image/3.jpeg" alt="图片显示失败">
+
     </div>
+
     <div class="item">
+
       <img src="image/4.jpeg" alt="图片显示失败">
+
     </div>
+
   </div>
+
   <!-- Controls -->
+
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
     <span class="glyphicon glyphicon-chevron-left"></span>
+
   </a>
+
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
     <span class="glyphicon glyphicon-chevron-right"></span>
+
   </a>
+
 </div>
+
 <!-- /图片轮播 -->
 
+
+
 <!--大鹏古城-->
+
 <div class="container-a" id="gucheng">
+
 	<div class="row">
+
 		<div class="col-md-5 col-md-offset-1 col-sm-6">
+
 			<h3 class="slideanim">大鹏古城---南城门</h3>
+
 			<hr class="slideanim">
+
 			<p class="slideanim">大鹏古城即大鹏所城 ,位于深圳市东部龙岗区大鹏镇鹏城村，占地11万平<br>方米，始建于明洪武二十七年（1394年）。</p>
+
 		</div>
+
 		<div class="col-md-6 col-sm-6 slideanim">
-			<img src="image/nanmen.jpg">
+
+			<div class="img-1">
+
+				<img src="image/nanmen.jpg">
+
+			</div>
+
 		</div>
+
 	</div>
+
 </div>
+
 <div class="container-b">
+
 	<div class="row">
+
 		<div class="col-md-5 col-md-offset-1 col-sm-6 slideanim">
+
 			<img src="image/xi.jpg">
+
 		</div>
+
 		<div class="col-md-6">
+
 			<h3 class="slideanim">大鹏古城---西城门</h3>
+
 			<hr class="slideanim">
+
 			<p class="slideanim">大鹏所城占地11万平方米，城墙高6米、长1200米，城墙由山麻石、青石砖<br>砌成。深圳今天的简称“鹏城”即源于此。</p>
+
 		</div>
+
 	</div>
+
 </div>
+
 <div class="container-c">
+
 	<div class="row">
+
 		<div class="col-md-5 col-md-offset-1 col-sm-6">
+
 			<h3 class="slideanim">大鹏古城---北城门</h3>
+
 			<hr class="slideanim">
+
 			<p class="slideanim">在深圳市大鹏镇鹏城村。大鹏守御千户所置于明洪武十四年（1381年），<br>洪武二十七年筑城，“内外砌以砖石。沿海所城大鹏为最，周围三百二十五<br>丈六尺，高一丈八尺”，有门楼、敌楼、护城河等。清代屡有修葺。</p>
+
 			<p class="slideanim">城平面呈不规则四边形，城内有三条主要街道，分别为东门街、南门街和<br>正街，主要建筑有左营署、参将府、守备署、军装局、火药局、关帝庙、<br>赵公祠、天后庙等。原有格局基本保留，东、西、南三城门仍保存完好。</p>
+
 		</div>
+
 		<div class="col-md-6 col-sm-6 slideanim">
+
 			<img src="image/bei.jpg">
+
 		</div>
+
 	</div>
+
 </div>
+
 <div class="container-d">
+
 	<div class="row">
+
 		<div class="col-md-5 col-md-offset-1 col-sm-6 slideanim">
+
 			<img src="image/dong.jpg">
+
 		</div>
+
 		<div class="col-md-6">
+
 			<h3 class="slideanim">大鹏古城---东城门</h3>
+
 			<hr class="slideanim">
+
 			<p class="slideanim">城内现存主要建筑物有振威将军第、刘起龙将军第等，建筑规模宏伟，保存完好。</p>
+
 			<p class="slideanim">大鹏所城原为防御海盗、倭寇侵扰而设，清初为大鹏所防守营，康熙年间<br>（1662—1722）又改为大鹏水师营，成为一个管辖珠江外洋东部海路的海防军事<br>机构。在海上要塞设有九汛，后又增建南头、大屿山等4座炮台。鸦片战争期间，<br>在抗击英国侵略军方面发挥了重要作用。</p>
+
 		</div>
+
 	</div>
+
 </div>
+
 <div class="container-e">
+
 	<div class="row">
+
 		<div class="col-md-5 col-md-offset-1 col-sm-6 slideanim">
+
 			<h3 class="slideanim">大鹏古城---粮仓</h3>
+
 			<hr class="slideanim">
+
 			<p class="slideanim">位于东门的大鹏粮仓外观依然完好，现已改为“大鹏民俗展示馆”，可在此参观大鹏当地的民俗风情，例如有名的大鹏凉帽、大鹏山歌等。</p>
+
 		</div>
+
 		<div class="col-md-6 col-sm-6 slideanim">
+
 			<img src="image/liangcang.jpg">
+
 		</div>
+
 	</div>
+
 </div>
+
 <div class="container-f">
+
 	<div class="row">
+
 		<div class="col-md-5 col-md-offset-1 col-sm-6 slideanim">
+
 			<img src="image/thg.jpg">
+
 		</div>
+
 		<div class="col-md-6 col-sm-6 slideanim">
+
 			<h3 class="slideanim">大鹏古城---天后宫</h3>
+
 			<hr class="slideanim">
+
 			<p class="slideanim">位于大鹏镇鹏城正街，始建于明永乐年间（公元1403-1425年）。是祭祀海上保护神－天后的庙宇。天后宫占地200多平方米，共分三进，门前13级台阶，走廊立着两条花岗岩圆柱，高盈丈，径近尺，精雕细琢。</p>
+
 		</div>
+
 	</div>
+
 </div>
+
 <!-- /大鹏古城 -->
 
+
+
 <!--海上项目-->
+
 <div class="dahai" id="dahai">
+
 	<h1 class="slideanim">海上项目</h1>
+
 	<div class="row slideanim" style="width:90%; margin-top:50px; margin: 10px auto;">
+
 		<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+
 			<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+
 				<div class="caption">
+
 					<div class="caption-content">
+
 						<i class="glyphicon glyphicon-send"></i>
+
 					</div>
+
 				</div>
+
 				<img src="image/fanchuan1.jpg" class="img-responsive">
+
 			</a>
+
 		</div>
+
 		<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+
 			<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+
 				<div class="caption">
+
 					<div class="caption-content">
+
 						<i class="glyphicon glyphicon-send"></i>
+
 					</div>
+
 				</div>
+
 				<img src="image/feiren.jpg" class="img-responsive">
+
 			</a>
+
 		</div>
+
 		<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+
 			<a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+
 				<div class="caption">
+
 					<div class="caption-content">
+
 						<i class="glyphicon glyphicon-send"></i>
+
 					</div>
+
 				</div>
+
 				<img src="image/fzfanchuan.jpg" class="img-responsive">
+
 			</a>
+
 		</div>
+
 	</div>
+
 	<div class="row slideanim" style="width:90%; margin-top:30px; margin: 10px auto;">
+
 		<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+
 			<a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+
 				<div class="caption">
+
 					<div class="caption-content">
+
 						<i class="glyphicon glyphicon-send"></i>
+
 					</div>
+
 				</div>
+
 				<img src="image/ssdc.jpg" class="img-responsive">
+
 			</a>
+
 		</div>
+
 		<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+
 			<a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+
 				<div class="caption">
+
 					<div class="caption-content">
+
 						<i class="glyphicon glyphicon-send"></i>
+
 					</div>
+
 				</div>
+
 				<img src="image/qianshui.jpg" class="img-responsive">
+
 			</a>
+
 		</div>
+
 		<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+
 			<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+
 				<div class="caption">
+
 					<div class="caption-content">
+
 						<i class="glyphicon glyphicon-send"></i>
+
 					</div>
+
 				</div>
+
 				<img src="image/water-danche.jpg" class="img-responsive">
+
 			</a>
+
 		</div>
+
 	</div>
+
 </div>
+
 <!-- /海上项目 -->
 
+
+
 <!--Portfolio-->
+
 <div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+
 	<div class="modal-content">
+
 		<div class="close-modal" data-dismiss="modal">
+
 			<div class="lr">
+
 				<div class="rl"></div>
+
 			</div>
+
 		</div>
+
 		<div class="container">
+
 			<div class="row">
+
 				<div class="col-md-8 col-lg-offset-2">
+
 					<div class="modal-body">
+
 						<h1>帆板</h1>
+
 						<hr>
+
 						<img src="image/fanchuan1.jpg" class="img-responsive img-centerad" alt="">
+
 						<p>随着9月份较场尾的海开始起风，深圳周边慕名而来的水上运动玩家也开始多了很多。蔚蓝的大海、阳光沙滩、肌肉型男、比基尼美女，一起过来感受和海浪碰撞的快感～</p>
+
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="glyphicon glyphicon-remove">Close</i></button>
+
 					</div>
+
 				</div>
+
 			</div>
+
 		</div>
+
 	</div>
+
 </div>
+
 <div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+
 	<div class="modal-content">
+
 		<div class="close-modal" data-dismiss="modal">
+
 			<div class="lr">
+
 				<div class="rl"></div>
+
 			</div>
+
 		</div>
+
 		<div class="container">
+
 			<div class="row">
+
 				<div class="col-md-8 col-lg-offset-2">
+
 					<div class="modal-body">
+
 						<h1>空中飞人</h1>
+
 						<hr>
+
 						<img src="image/feiren.jpg" class="img-responsive img-centerad" alt="">
+
 						<p>在国外很流行的一个项目，现在较场尾就有得玩啦，配有专业教练一对一教学。(此活动比较危险，建议穿好防护装备再去玩，不然会摔的有点痛，费用：大约580/半小时)</p>
+
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="glyphicon glyphicon-remove">Close</i></button>
+
 					</div>
+
 				</div>
+
 			</div>
+
 		</div>
+
 	</div>
+
 </div>
+
 <div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+
 	<div class="modal-content">
+
 		<div class="close-modal" data-dismiss="modal">
+
 			<div class="lr">
+
 				<div class="rl"></div>
+
 			</div>
+
 		</div>
+
 		<div class="container">
+
 			<div class="row">
+
 				<div class="col-md-8 col-lg-offset-2">
+
 					<div class="modal-body">
+
 						<h1>风筝冲浪</h1>
+
 						<hr>
+
 						<img src="image/fzfanchuan.jpg" class="img-responsive img-centerad" alt="">
+
 						<p>较场尾是内海，浪比较小。每年的9月份开始起风，很适合在这里玩风筝冲浪之类的项目。各种酷炫的高难度动作，真的是吓死BB啦，据说这位玩家之前是省队的!(颜值很高，远看像歪果仁哦，费用：大约150/时)</p>
+
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="glyphicon glyphicon-remove">Close</i></button>
+
 					</div>
+
 				</div>
+
 			</div>
+
 		</div>
+
 	</div>
+
 </div>
+
 <div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+
 	<div class="modal-content">
+
 		<div class="close-modal" data-dismiss="modal">
+
 			<div class="lr">
+
 				<div class="rl"></div>
+
 			</div>
+
 		</div>
+
 		<div class="container">
+
 			<div class="row">
+
 				<div class="col-md-8 col-lg-offset-2">
+
 					<div class="modal-body">
+
 						<h1>水上单车</h1>
+
 						<hr>
+
 						<img src="image/ssdc.jpg" class="img-responsive img-centerad" alt="">
+
 						<p>水上自行车运动起源于加拿大，惬意、安全，它的车座高度可以调节，车把是赛车型，易于操纵，脚蹬可以前后蹬，前进或是退后一切自如，如果感到疲劳，还可停住脚，在水上“悬浮”，很是悠然自得。非常轻松休闲的一个海上运动，老少咸宜。(费用：大约100/小时)</p>
+
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="glyphicon glyphicon-remove">Close</i></button>
+
 					</div>
+
 				</div>
+
 			</div>
+
 		</div>
+
 	</div>
+
 </div>
+
 <div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+
 	<div class="modal-content">
+
 		<div class="close-modal" data-dismiss="modal">
+
 			<div class="lr">
+
 				<div class="rl"></div>
+
 			</div>
+
 		</div>
+
 		<div class="container">
+
 			<div class="row">
+
 				<div class="col-md-8 col-lg-offset-2">
+
 					<div class="modal-body">
+
 						<h1>自由潜水</h1>
+
 						<hr>
+
 						<img src="image/qianshui.jpg" class="img-responsive img-centerad" alt="">
+
 						<p>潜水，是现在很多年轻人喜欢的运动，潜在海里和鱼群或是珊瑚拍照，有种酷酷的感觉。在大鹏潜水分为岸潜和珊瑚区船潜2种。岸潜主要是在较场尾附近海域(费用：大约480/人，2~3人起行)，而船潜的海底景色会更加迷人，海洋生物会更加丰富，价格也会相对贵些。(费用：大约680/人，2~3人起行)</p>
+
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="glyphicon glyphicon-remove">Close</i></button>
+
 					</div>
+
 				</div>
+
 			</div>
+
 		</div>
+
 	</div>
+
 </div>
+
 <div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+
 	<div class="modal-content">
+
 		<div class="close-modal" data-dismiss="modal">
+
 			<div class="lr">
+
 				<div class="rl"></div>
+
 			</div>
+
 		</div>
+
 		<div class="container">
+
 			<div class="row">
+
 				<div class="col-md-8 col-lg-offset-2">
+
 					<div class="modal-body">
+
 						<h1>海上飞鱼</h1>
+
 						<hr>
+
 						<img src="image/water-danche.jpg" class="img-responsive img-centerad" alt="">
+
 						<p>看着就很好玩，但别只顾着尖叫，记得抓紧咯。(费用：大约50/人，15分钟左右)</p>
+
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="glyphicon glyphicon-remove">Close</i></button>
+
 					</div>
+
 				</div>
+
 			</div>
+
 		</div>
+
 	</div>
+
 </div>
+
 <!-- /Portfolio -->
 
+
+
 <!--民宿-->
+
 <div class="minsu" id="minsu">
+
 	<ul class="ch-grid">
+
 		<li class="slideanim">
+
 			<div class="ch-item ch-img-1">
+
 				<div class="ch-info-wrap">
+
 					<div class="ch-info">
+
 						<div class="ch-info-front ch-img-1"></div>
+
 						<div class="ch-info-back">
+
 							<h3>订房热线</h3>
+
 							<p>13791095091</p>
+
 							<p><a href="1/minsu1.html">详情>></a></p>
+
 						</div>
+
 					</div>
+
 				</div>
+
 			</div>
+
 			<p class="ch-text">屿舍空间</p>
+
 		</li>
+
 		<li class="slideanim">
+
 			<div class="ch-item ch-img-2">
+
 				<div class="ch-info-wrap">
+
 					<div class="ch-info">
+
 						<div class="ch-info-front ch-img-2"></div>
+
 						<div class="ch-info-back">
+
 							<h3>订房热线</h3>
+
 							<p>13791095091</p>
+
 							<p><a href="2/minsu2.html">详情>></a></p>
+
 						</div>
+
 					</div>
+
 				</div>
+
 			</div>
+
 			<p class="ch-text">叉叉纳里</p>
+
 		</li>
+
 		<li class="slideanim">
+
 			<div class="ch-item ch-img-3">
+
 				<div class="ch-info-wrap">
+
 					<div class="ch-info">
+
 						<div class="ch-info-front ch-img-3"></div>
+
 						<div class="ch-info-back">
+
 							<h3>订房热线</h3>
+
 							<p>13791095091</p>
+
 							<p><a href="3/minsu3.html">详情>></a></p>
+
 						</div>
+
 					</div>
+
 				</div>
+
 			</div>
+
 			<p class="ch-text">波托菲特</p>
+
 		</li>
+
 		<li class="slideanim">
+
 			<div class="ch-item ch-img-4">
+
 				<div class="ch-info-wrap">
+
 					<div class="ch-info">
+
 						<div class="ch-info-front ch-img-4"></div>
+
 						<div class="ch-info-back">
+
 							<h3>订房热线</h3>
+
 							<p>13791095091</p>
+
 							<p><a href="4/minsu4.html">详情>></a></p>
+
 						</div>
+
 					</div>
+
 				</div>
+
 			</div>
+
 			<p class="ch-text">爱啥啥</p>
+
 		</li>
+
 		<li class="slideanim">
+
 			<div class="ch-item ch-img-5">
+
 				<div class="ch-info-wrap">
+
 					<div class="ch-info">
+
 						<div class="ch-info-front ch-img-5"></div>
+
 						<div class="ch-info-back">
+
 							<h3>订房热线</h3>
+
 							<p>13791095091</p>
+
 							<p><a href="5/minsu5.html">详情>></a></p>
+
 						</div>
+
 					</div>
+
 				</div>
+
 			</div>
+
 			<p class="ch-text">旋木家--壹号店</p>
+
 		</li>
+
 		<li class="slideanim">
+
 			<div class="ch-item ch-img-6">
+
 				<div class="ch-info-wrap">
+
 					<div class="ch-info">
+
 						<div class="ch-info-front ch-img-6"></div>
+
 						<div class="ch-info-back">
+
 							<h3>订房热线</h3>
+
 							<p>13791095091</p>
+
 							<p><a href="6/minsu6.html">详情>></a></p>
+
 						</div>
+
 					</div>
+
 				</div>
+
 			</div>
+
 			<p class="ch-text">白宫</p>
+
 		</li>
+
 		<li class="slideanim">
+
 			<div class="ch-item ch-img-7">
+
 				<div class="ch-info-wrap">
+
 					<div class="ch-info">
+
 						<div class="ch-info-front ch-img-7"></div>
+
 						<div class="ch-info-back">
+
 							<h3>订房热线</h3>
+
 							<p>13791095091</p>
+
 							<p><a href="7/minsu7.html">详情>></a></p>
+
 						</div>
+
 					</div>
+
 				</div>
+
 			</div>
+
 			<p class="ch-text">蔚蓝海岸</p>
+
 		</li>
+
 		<li class="slideanim">
+
 			<div class="ch-item ch-img-8">
+
 				<div class="ch-info-wrap">
+
 					<div class="ch-info">
+
 						<div class="ch-info-front ch-img-8"></div>
+
 						<div class="ch-info-back">
+
 							<h3>订房热线</h3>
+
 							<p>13791095091</p>
+
 							<p><a href="8/minsu8.html">详情>></a></p>
+
 						</div>
+
 					</div>
+
 				</div>
+
 			</div>
+
 			<p class="ch-text">怡樂客栈</p>
+
 		</li>
+
 	</ul>
+
 </div>
+
 <!-- /民宿 -->
 
+
+
 <!--footer-->
+
 <div class="footer-below">
+
 	<div class="container">
+
 		<div class="row">
+
 			<div class="rol-lg-12">
+
 				<p>制作者：吴家俊</p>
+
 			</div>
+
 		</div>
+
 	</div>
+
 	<a href="#Mypage" class="xg"><span class="glyphicon glyphicon-eject"></span></a>
+
 </div>
+
 <!-- /footer -->
 
+<script src="js/myCtrl.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
-<script type="text/javascript">
-	$(document).ready(function(){
-		$(".xg, footer a[href='#Mypage]").on("click", function(event){
-			event.preventDefault();
-			var hash = this.hash;
-			$('html, body').animate({
-				scrollTop: $(hash).offset().top
-			},900, function(){
-				window.location.hash = hash;
-			});
-		});
-	});
-</script>
 
 <script type="text/javascript">
-	$(window).scroll(function() {
-	  $(".slideanim").each(function(){
-	    var pos = $(this).offset().top;
-	    var winTop = $(window).scrollTop();
-	    if (pos < winTop + 600) {
-	      $(this).addClass("slide");
-	    }
-	  });
+
+	$(document).ready(function(){
+
+		$(".xg, a[href='#Mypage]").on("click", function(event){
+
+			event.preventDefault();
+
+			var hash = this.hash;
+
+			$('html, body').animate({
+
+				scrollTop: $(hash).offset().top
+
+			},900, function(){
+
+				window.location.hash = hash;
+
+			});
+
+		});
+
 	});
+
 </script>
+
+
+
+<script type="text/javascript">
+
+	$(window).scroll(function() {
+
+	  $(".slideanim").each(function(){
+
+	    var pos = $(this).offset().top;
+
+	    var winTop = $(window).scrollTop();
+
+	    if (pos < winTop + 600) {
+
+	      $(this).addClass("slide");
+
+	    }
+
+	  });
+
+	});
+
+</script>
+
 </body>
+
 </html>

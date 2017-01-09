@@ -1,495 +1,1008 @@
 body{
+
 	padding: 0;
+
 	margin: 0;
+
 	width: 100%；
+
 	height: 100%;
+
 }
+
 body a{
+
 	transition: 0.5s all;
+
 	-webkit-transition: 0.5s all;
+
 	-o-transition: 0.5s all;
+
 	-moz-transition: 0.5s all;
+
 	-ms-transition: 0.5s all;
+
 }
+
 a{
+
 	text-decoration: none;
+
 }
+
 ul li{
+
 	list-style: none;
+
 }
+
 h3{
+
 	color: #fff;
+
 	display: block;
+
 	-webkit-margin-before: 1em;
+
 	-webkit-margin-after: 1em;
+
 	-webkit-margin-start: 0px;
+
 	-webkit-margin-end: 0px;
+
 }
+
+
 
 /*导航栏*/
+
 .navbar-default{
+
 	background-color: rgba(109, 186, 227, 0.4);
+
 	border-color: transparent;
+
 }
+
 .navbar-default a{
+
 	color: #ffffff !important;
+
 }
+
 .navbar-default .dropdown .dropdown-menu a{
+
 	color: #000 !important;
+
 }
+
 .navbar-default > .active > a{
+
 	color: #000;
+
 }
+
 .navbar-default .navbar-nav > .active > a{
+
 	color: #000 !important;
+
 }
+
 .carousel{
+
 	height: 793px;
+
 }
+
 .carousel .item {
+
     height: 100%;
+
 }
+
 .carousel .item img {
+
     width: 100%;
+
     height: 100%;
+
 }
+
 .carousel-inner{
+
 	height: 100%;
+
 }
+
 /* /导航栏 */
 
+
+
 /*古城区*/
+
 .container-a{
+
 	padding: 50px;
+
 	background: url(../image/nanmen.jpg) no-repeat;
+
 	background-attachment: fixed;
+
 	background-position: center;
+
 	background-size: 100% 100%;
+
 	/*border: 1px solid #999;
+
 	border-radius: 15px;*/
+
 }
+
 .container-b{
+
 	padding: 50px;
+
 	background: url(../image/xi.jpg) no-repeat;
+
 	background-attachment: fixed;
+
 	background-position: center;
+
 	background-size: 100% 100%;
+
 	/*border: 1px solid #000;
+
 	border-radius: 15px;*/
+
 }
+
 .container-c{
+
 	padding: 50px;
+
 	background: url(../image/bei.jpg) no-repeat;
+
 	background-attachment: fixed;
+
 	background-position: center;
+
 	background-size: 100% 100%;
+
 }
+
 .container-d{
+
 	padding: 50px;
+
 	background: url(../image/dong.jpg) no-repeat;
+
 	background-attachment: fixed;
+
 	background-position: center;
+
 	background-size: 100% 100%;
+
 }
+
 .container-e{
+
 	padding: 50px;
+
 	background: url(../image/liangcang.jpg) no-repeat;
+
 	background-attachment: fixed;
+
 	background-size: center;
+
 	background-size: 100% 100%;
+
 }
+
 .container-f{
+
 	padding: 50px;
+
 	background: url(../image/thg.jpg) no-repeat;
+
 	background-attachment: fixed;
+
 	background-position: center;
+
 	background-size: 100% 100%;
+
 }
+
 .container-a hr{
+
 	margin-top: -5px;
+
 	width: 300px;
+
 	float: left;
+
 }
+
 .container-b hr{
+
 	margin-top: -5px;
+
 	width: 300px;
+
 	float: left;
+
 }
+
 .container-c hr{
+
 	margin-top: -5px;
+
 	width: 300px;
+
 	float: left;
+
 }
+
 .container-d hr{
+
 	margin-top: -5px;
+
 	width: 300px;
+
 	float: left;
+
 }
+
 .container-e hr{
+
 	margin-top: -5px;
+
 	width: 300px;
+
 	float:left; 
+
 }
+
 .container-f hr{
+
 	margin-top: -5px;
+
 	float: left;; 
+
 }
+
+
 
 .container-a p{
+
 	float: left;
+
 	color: #ffffff;
+
 }
+
 .container-b p{
+
 	float: left;
+
 	color: #ffffff;
+
 }
+
 .container-c p{
+
 	float: left;
+
 	color: #ffffff;
+
 }
+
 .container-d p{
+
 	float: left;
+
 	color: #fff;
+
 }
+
 .container-e p{
+
 	float: left;
+
 	color: #fff;
+
 }
+
 .container-f p{
+
 	float: left;
+
 	color: #fff;
+
 }
+
+
 
 .container-a .row img{
+
 	max-width: 100%;
+
 	display: block;
+
 	position: relative;
+
 }
+
 .container-b .row img{
+
 	max-width: 100%;
+
 	display: block;
+
 	position: relative;
+
 }
+
 .container-c .row img{
+
 	max-width: 100%;
+
 	display: block;
+
 	position: relative;
+
 }
+
 .container-d .row img{
+
 	max-width: 100%;
+
 	display: block;
+
 	position: relative;
+
 }
+
 .container-e .row img{
+
 	max-width: 100%;
+
 	display: block;
+
 	position: relative;
+
 }
+
 .container-f .row img{
+
 	max-width: 100%;
+
 	display: block;
+
 	position: relative;
+
 }
+
+
 
 .container-a .row img:hover{
+
 	transform: scale(1.1, 1.1);
+
 	transition: .3s transform;
+
 }
+
 .container-b .row img:hover{
+
 	transform: scale(1.1, 1.1);
+
 	transition: .3s transform;
+
 }
+
 .container-c .row img:hover{
+
 	transform: scale(1.1, 1.1);
+
 	transition: .3s transform;
+
 }
+
 .container-d .row img:hover{
+
 	transform: scale(1.1, 1.1);
+
 	transition: .3s transform;
+
 }
+
 .container-e .row img:hover{
+
 	transform: scale(1.1, 1.1);
+
 	transition: .3s transform;
+
 }
+
 .container-f .row img:hover{
+
 	transform: scale(1.1, 1.1);
+
 	transition: .3s transform;
+
 }
+
 /* /古城区 */
 
+
+
 /*海上项目*/
+
 .dahai{
+
 	padding: 50px;
-	/*background: url(../image/dahai.jpg);*/
+
+	background: url(../image/dahai.jpg);
+
 	background-attachment: fixed;
+
 	background-position: center;
+
 	background-size: 100% 100%;
+
 	z-index: 2;
+
 }
+
 .dahai h1{
+
 	text-align: center;
+
 	color: #fff;
+
 	margin-bottom: 50px;
+
 }
+
 .dahai .portfolio-item{
+
 	right: 0;
+
 	margin: 0 0 15px;
+
 }
+
 .dahai *{
+
 	z-index: 2;
+
 }
+
 .dahai img{
+
 	width: 100%;
+
 	height: 100%;
+
 }
+
 .dahai .portfolio-item .portfolio-link{
+
 	display: block;
+
 	position: relative;
+
 	margin: 0 auto;
+
 	max-width: 400px;
+
 }
+
 .dahai .portfolio-item .portfolio-link .caption{
+
 	position: absolute;
+
 	width: 100%;
+
 	height: 100%;
+
 	opacity: 0;
+
 	background: rgba(81,203,240,.7);
+
 	-webkit-transition: all ease .5s;
+
 	-moz-transition:all ease .5s;
+
 	transition: all ease .5s;
+
 }
+
 .dahai .portfolio-item .portfolio-link .caption:hover{
+
 	opacity: 1;
+
 }
+
 .dahai .portfolio-item .portfolio-link .caption .caption-content{
+
 	position: absolute;
+
 	top: 50%;
+
 	width: 100%;
+
 	height: 20px;
+
 	margin-top: -12px;
+
 	text-align: center;
+
 	font-size: 12px;
+
 	color: #fff;
+
 }
+
 .dahai .portfolio-item .portfolio-link .caption .caption-content i{
+
 	margin-top: -12px;
+
 	font-size: 35px;
+
 }
+
 /*portfolio*/
+
 .portfolio-modal .modal-content{
+
 	padding: 10px 0 35px;
+
 	min-height: 100%;
+
 	border: 0;
+
 	border-radius: 0;
+
 	text-align: center;
+
 	background-clip: border-box;
+
 	box-shadow: none;
+
 	-webkit-box-shadow: none;
+
 }
+
 .modal-content{
+
 	background-color: rgba(0,29,1,0.7);
+
 }
+
 .portfolio-modal .close-modal{
+
 	position: absolute;
+
 	top: 25px;
+
 	right: 25px;
+
 	width: 75px;
+
 	height: 75px;
+
 	background-color: transparent;
+
 	cursor: pointer;
+
 }
+
 .portfolio-modal .close-modal .lr{
+
 	z-index: 1077;
+
 	width: 1px;
+
 	height: 75px;
+
 	margin-left: 35px;
+
 	background-color: #fff;
+
 	transform: rotate(45deg);
+
 	-webkit-transform: rotate(45deg);
+
 	-ms-transform: rotate(45deg);
+
 }
+
 .portfolio-modal .close-modal .lr .rl{
+
 	z-index: 1078;
+
 	width: 1px;
+
 	height: 75px;
+
 	background-color: #fff;
+
 	transform: rotate(90deg);
+
 	-webkit-transform: rotate(90deg);
+
 	-ms-transform: rotate(90deg);
+
 }
+
 .portfolio-modal .modal-content img{
+
 	margin: 0 0 30px;
+
 	width: 100%; 
+
 }
+
 .portfolio-modal .modal-content h1{
+
 	color: #fff;
+
 }
+
 .portfolio-modal .modal-content p{
+
 	color: #fff;
+
 }
+
 .portfolio-modal .modal-content .container button{
+
 	margin-top: 20px;
+
 }
+
 /* /portfolio*/
+
 /* /海上项目 */
 
-/*民宿区*/
-.ch-grid{
-	margin: 20px 0 0 0;
-	padding: 0;
-	list-style: none;
-	display: block;
-	text-align: center;
-	width: 100%;
-}
-.minsu{
-	background: url(../image/blur.jpg) no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: 100% 100%;
-	padding: 100px;
-	display: block;
-}
-.ch-grid li{
-	width: 220px;
-	height: 220px;
-	display: inline-block;
-	margin: 20px;
-}
-.ch-item{
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	position: relative;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-	cursor: default;
-}
-.ch-info-wrap{
-	position: absolute;
-	width: 180px;
-	height: 180px;
-	border-radius: 50%;
-	perspective: 800px;
-	transition: all 0.4s ease-in-out;
-	top: 20px;
-	left: 20px;
-	background: #f9f9f9 url(../image/null.jpg);
-	box-shadow:
-		0 0 0 20px rgba(255,255,255,0.2), 
-		inset 0 0 3px rgba(115,114, 23, 0.8);
-}
-.ch-info{
-	position: absolute;
-	width: 180px;
-	height: 180px;
-	border-radius: 50%;
-	transition: all 0.4s ease-in-out;
-	transform-style: preserve-3d;
-}
-.ch-info .ch-info-front{
-	-webkit-transition: all 0.6s ease-in-out;
-	-moz-transition: all 0.6s ease-in-out;
-	-o-transition: all 0.6s ease-in-out;
-	-ms-transition: all 0.6s ease-in-out;
-	transition: all 0.6s ease-in-out;
-}
-.ch-info > div{
-	display: block;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	background-position: center center;
-	-webkit-backface-visibility: hidden;
-}
-.ch-info .ch-info-back{
-	transform: rotate3d(0,1,0,180deg);
-	background: #000;
-}
-.ch-img-1{
-	background-image: url(../image/minsu.jpg);
-}
-.ch-img-2{
-	background-image: url(../image/minsu1.jpg);
-}
-.ch-img-3{
-	background-image: url(../image/minsu2.jpeg);
-}
-.ch-img-4{
-	background-image: url(../image/minsu3.jpg);
-}
-.ch-img-5{
-	background-image: url(../image/minsu4.jpg);
-}
-.ch-img-6{
-	background-image: url(../image/minsu5.jpg);
-}
-.ch-img-7{
-	background-image: url(../image/minsu6.jpg);
-}
-.ch-img-8{
-	background-image: url(../image/minsu7.jpg);
-}
-.ch-info-back{
-	text-align: center;
-}
-.ch-info h3{
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 14px;
-	margin: 0 15px;
-	padding: 40px 0 0 0;
-	height: 70px;
-	font-family: 'Open Sans', Arial, sans-serif;
-}
-.ch-info p{
-	color: #fff;
-	padding: 15px 5px;
-	font-style: italic;
-	margin: 0 30px;
-	font-size: 12px;
-	border-top: 1px solid rgba(255,255,255,0.5);
-}
-.ch-info a{
-	font-style: normal;
-	color: #fff;
-}
-.ch-info a:hover{
-	color: red;
-}
-.ch-item:hover .ch-info-wrap{
-	box-shadow: 
-		0 0 0 0 rgba(255,255,255,0.8),
-		inset 0 0 3px rgba(115,114,23,0.8);
-}
-.ch-item:hover .ch-info{
-	transform: rotate3d(0,1,0,-180deg);
-}
-.ch-text{
-	position: relative;
-	top: 7px;
-	color: #105f71;
-}
-/* /民宿区 */
 
-/*作者区*/
-.footer-below{
-	padding: 20px;
-	background-color: #526f75;
+
+/*民宿区*/
+
+.ch-grid{
+
+	margin: 20px 0 0 0;
+
+	padding: 0;
+
+	list-style: none;
+
+	display: block;
+
 	text-align: center;
+
+	width: 100%;
+
 }
+
+.minsu{
+
+	background: url(../image/blur.jpg) no-repeat;
+
+	background-attachment: fixed;
+
+	background-position: center;
+
+	background-size: 100% 100%;
+
+	padding: 100px;
+
+	display: block;
+
+}
+
+.ch-grid li{
+
+	width: 220px;
+
+	height: 220px;
+
+	display: inline-block;
+
+	margin: 20px;
+
+}
+
+.ch-item{
+
+	width: 100%;
+
+	height: 100%;
+
+	border-radius: 50%;
+
+	position: relative;
+
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+
+	cursor: default;
+
+}
+
+.ch-info-wrap{
+
+	position: absolute;
+
+	width: 180px;
+
+	height: 180px;
+
+	border-radius: 50%;
+
+	perspective: 800px;
+
+	transition: all 0.4s ease-in-out;
+
+	top: 20px;
+
+	left: 20px;
+
+	background: #f9f9f9 url(../image/null.jpg);
+
+	box-shadow:
+
+		0 0 0 20px rgba(255,255,255,0.2), 
+
+		inset 0 0 3px rgba(115,114, 23, 0.8);
+
+}
+
+.ch-info{
+
+	position: absolute;
+
+	width: 180px;
+
+	height: 180px;
+
+	border-radius: 50%;
+
+	transition: all 0.4s ease-in-out;
+
+	transform-style: preserve-3d;
+
+}
+
+.ch-info .ch-info-front{
+
+	-webkit-transition: all 0.6s ease-in-out;
+
+	-moz-transition: all 0.6s ease-in-out;
+
+	-o-transition: all 0.6s ease-in-out;
+
+	-ms-transition: all 0.6s ease-in-out;
+
+	transition: all 0.6s ease-in-out;
+
+}
+
+.ch-info > div{
+
+	display: block;
+
+	position: absolute;
+
+	width: 100%;
+
+	height: 100%;
+
+	border-radius: 50%;
+
+	background-position: center center;
+
+	-webkit-backface-visibility: hidden;
+
+}
+
+.ch-info .ch-info-back{
+
+	transform: rotate3d(0,1,0,180deg);
+
+	background: #000;
+
+}
+
+.ch-img-1{
+
+	background-image: url(../image/minsu.jpg);
+
+}
+
+.ch-img-2{
+
+	background-image: url(../image/minsu1.jpg);
+
+}
+
+.ch-img-3{
+
+	background-image: url(../image/minsu2.jpeg);
+
+}
+
+.ch-img-4{
+
+	background-image: url(../image/minsu3.jpg);
+
+}
+
+.ch-img-5{
+
+	background-image: url(../image/minsu4.jpg);
+
+}
+
+.ch-img-6{
+
+	background-image: url(../image/minsu5.jpg);
+
+}
+
+.ch-img-7{
+
+	background-image: url(../image/minsu6.jpg);
+
+}
+
+.ch-img-8{
+
+	background-image: url(../image/minsu7.jpg);
+
+}
+
+.ch-info-back{
+
+	text-align: center;
+
+}
+
+.ch-info h3{
+
+	color: #fff;
+
+	text-transform: uppercase;
+
+	letter-spacing: 2px;
+
+	font-size: 14px;
+
+	margin: 0 15px;
+
+	padding: 40px 0 0 0;
+
+	height: 70px;
+
+	font-family: 'Open Sans', Arial, sans-serif;
+
+}
+
+.ch-info p{
+
+	color: #fff;
+
+	padding: 15px 5px;
+
+	font-style: italic;
+
+	margin: 0 30px;
+
+	font-size: 12px;
+
+	border-top: 1px solid rgba(255,255,255,0.5);
+
+}
+
+.ch-info a{
+
+	font-style: normal;
+
+	color: #fff;
+
+}
+
+.ch-info a:hover{
+
+	color: red;
+
+}
+
+.ch-item:hover .ch-info-wrap{
+
+	box-shadow: 
+
+		0 0 0 0 rgba(255,255,255,0.8),
+
+		inset 0 0 3px rgba(115,114,23,0.8);
+
+}
+
+.ch-item:hover .ch-info{
+
+	transform: rotate3d(0,1,0,-180deg);
+
+}
+
+.ch-text{
+
+	position: relative;
+
+	top: 7px;
+
+	color: #105f71;
+
+}
+
+/* /民宿区 */
+.mydiv{
+	display: inline-block;
+	right: 15px;
+	position: absolute;
+}
+
+.mytext{
+	color: #FFF;
+}
+
+.mytexts{
+	color: #FFF;
+	margin-left: 30px;
+	cursor: pointer;
+}
+.mytexts:hover{
+	text-decoration: underline;
+}
+.mydivs{
+	position: relative;
+	display: inline-block;
+	right: 70px;
+	top: 17px;
+}
+/*作者区*/
+
+.footer-below{
+
+	padding: 20px;
+
+	background-color: #526f75;
+
+	text-align: center;
+
+}
+
 .footer-below p{
+
 	color: #fff;
+
 	font-size: 20px;
+
 }
+
 .footer-below .glyphicon{
+
 	color: #fff;
+
 }
+
+
 
 .slideanim{
+
 	visibility: hidden;
+
 }
+
 .slide{
 	animation-name: slide;
 	-webkit-animation-name: slide; 
@@ -497,7 +1010,10 @@ h3{
 	-webkit-animation-duration: 1s;
 	visibility: visible;
 }
+
 /* /作者区 */
+
+
 
 @keyframes slide{
 	0%{
@@ -509,6 +1025,7 @@ h3{
 		-webkit-transform: translateY(0%);
 	}
 }
+
 @-webkit-keyframes slide{
 	0%{
 		opacity: 0;
@@ -532,6 +1049,7 @@ h3{
         height: 100%;
     }
 }
+
 @media (max-width: 736px) {
 	.carousel{
 		height: 500px;
@@ -544,6 +1062,7 @@ h3{
         height: 100%;
     }
 }
+
 @media (max-width: 667px) {
 	.carousel{
 		height: 350px;
